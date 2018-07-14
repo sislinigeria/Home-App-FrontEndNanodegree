@@ -392,5 +392,96 @@ media query screen size 0 to 529px
     display: block;
     margin:auto;
     float:none;
+  }
+  .nav__item {
+    font-size: 110%;
+  }
+  li, h3 {
+    text-align: justify;
+  }
 }
+
+/*
+Ipad Size screen media query
+*/
+@media screen and (min-width: 530px) and (max-width: 770px) {
+  .nav__item {
+    font-size: 120%;
+  }
+  .top-news, .scores section {
+    display:block;
+  }
+  .top-news {
+    float:right;
+  }
+  .scores {
+    float: left;
+  }
+}
+
+/*
+Full computer screen media query
+*/
+@media screen and (min-width: 771px) {
+  .header__inner {
+    width: 1000px;
+  }
+
+  .nav {
+    width: 1000px;
+  }
+
+  .nav__item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    line-height: 24px;
+    padding: 24px;
+    text-transform: uppercase; 
+  }
+
+  main {
+    width: 1000px;
+  }
+  
+  .hero {
+    float: left;
+    width: 500px;
+    height: 300px;
+  }
+
+  .top-news {
+    float: right;
+    width: 500px;
+    height: 300px;
+  }
+
+  .scores {
+    width: 500px;
+    float: left;
+    padding-top: 1em;
+  }
+
+  .weather {
+    float: right;
+    width: 500px;
+    padding: 1em;
+  }
+
+  .weather__today {
+    width: 60%;
+  }
+
+  .weather__next__image {
+    width: 100%;
+  }
+
+  .snippet__thumbnail {
+    width: 100px;
+  }
+ 
+  footer {
+    width: 100%;
+  }
 }
